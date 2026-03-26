@@ -4,11 +4,13 @@ import io.github.giannihonda.springarchitecture.automaker.Engine;
 import io.github.giannihonda.springarchitecture.automaker.EngineType;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class AutomakerConfiguration {
 
     @Bean(name = "engineVacuum")
+    @Primary
     public Engine engineVacuum() {
         var engine = new Engine();
         engine.setHorsePower(120);
