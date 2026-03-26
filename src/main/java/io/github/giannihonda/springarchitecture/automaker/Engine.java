@@ -1,18 +1,18 @@
 package io.github.giannihonda.springarchitecture.automaker;
 
 public class Engine {
-    private String engine;
+    private String model;
     private Integer horsePower;
     private Integer cylinders;
     private Double literage;
     private EngineType type;
 
-    public String getEngine() {
-        return engine;
+    public String getModel() {
+        return model;
     }
 
-    public void setEngine(String engine) {
-        this.engine = engine;
+    public void setModel(String model) {
+        this.model = model;
     }
 
     public Integer getHorsePower() {
@@ -45,5 +45,16 @@ public class Engine {
 
     public void setType(EngineType type) {
         this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "Engine{" +
+                "model='" + model + '\'' +
+                ", horsePower=" + horsePower +
+                ", cylinders=" + cylinders +
+                ", literage=" + literage +
+                ", type=" + type +
+                '}';
     }
 }
