@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Spring Architecture
+  jpa:
+    show-sql: true
+  main:
+    lazy-initialization: false
+
+app:
+  automaker:
+      standard-engine: 130
+  config:
+    variable: value of the variable X
+    value1: 500
